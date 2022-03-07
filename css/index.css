@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.slideWrap {
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.slideWrap .slides {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  transform: translateX(0);
+}
+.slideWrap .slides > li {
+  float: left;
+}
+.slideWrap .slides > li > img {
+  width: 400px;
+  height: 400px;
+}
+.slideWrap .slides.animated {
+  transition: 0.5s;
+}
+
+.btn {
+  width: 400px;
+  height: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.btn > span {
+  display: block;
+  width: 100px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */
